@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#078207"
+        android:id="@+id/reLayouttop">
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/LocationName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/backbtn"
+            android:text="DLSU STC"
+            android:textColor="#000"
+            android:textSize="32dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/backbtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Shuttle"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_back"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/shtl1"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/reLayouttop"
+        android:background="#fff">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sht1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="190dp"
+            android:text="ETA: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/shtd1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="190dp"
+            android:text="ETD: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="320dp"
+            android:text="->"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dest1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="230dp"
+            android:text="dlsu"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/A1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sht1"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:text="9:15"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/D1"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/shtd1"
+            android:text="9:30"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shtl2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/shtl1"
+        android:background="#d3d3d3">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sht2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="190dp"
+            android:text="ETA: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/shtd2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="190dp"
+            android:text="ETD: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="320dp"
+            android:text="->"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dest2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="230dp"
+            android:text="dlsu"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/A2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sht2"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:text="9:15"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/D2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/shtd2"
+            android:text="9:30"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shtl3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/shtl2"
+        android:background="#fff">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sht3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="190dp"
+            android:text="ETA: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/shtd3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="190dp"
+            android:text="ETD: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="320dp"
+            android:text="->"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dest3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="230dp"
+            android:text="dlsu"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/A3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sht3"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:text="9:15"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/D3"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/shtd3"
+            android:text="9:30"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shtl4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/shtl3"
+        android:background="#d3d3d3"
+        android:clickable="true">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/sht4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="190dp"
+            android:text="ETA: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/shtd4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="190dp"
+            android:text="ETD: "
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="320dp"
+            android:text="->"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dest4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="230dp"
+            android:text="dlsu"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/A4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/sht4"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:text="9:15"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/D4"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/shtd4"
+            android:text="9:30"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textAlignment="center" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
