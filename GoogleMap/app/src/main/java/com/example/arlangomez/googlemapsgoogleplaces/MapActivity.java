@@ -92,14 +92,14 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
         mMap.setOnMarkerClickListener(this);
 
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(dlsu));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(dlsu));
 
-        LatLngBounds bounds = new LatLngBounds.Builder()
+        /*LatLngBounds bounds = new LatLngBounds.Builder()
                 .include(central)
                 .include(nuvali)
                 .include(dlsu)
                 .build();
-        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 50));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 50));*/
 
         if (mLocationPermissionGranted) {
             getDeviceLocation();
