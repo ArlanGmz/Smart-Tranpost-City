@@ -1,5 +1,6 @@
 package com.example.arlangomez.googlemapsgoogleplaces;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -17,11 +19,15 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private static final int ERROR_DIALOG_REQUEST = 9001;
+    //private int UserID;
+    private String PassW,UserID;
+    private EditText ID, Pword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         if(isServiceOK()){
             init();
@@ -33,14 +39,28 @@ public class MainActivity extends AppCompatActivity {
         btnMap.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent intent = new Intent(MainActivity.this,  MapActivity.class);
-                startActivity(intent);
+
+                ID=findViewById(R.id.UserID);
+                Pword=findViewById(R.id.password);
+                UserID = ID.getText().toString();
+                PassW=Pword.getText().toString();
+                if(UserID.matches("") || PassW.matches(""))
+                {
+                    Toast.makeText(MainActivity.this, "You did not input a username or password ", Toast.LENGTH_SHORT).show();
+                }
+                else //if(Integer.parseInt(UserID) >= 1000000)
+                {
+                    Intent intent = new Intent(MainActivity.this,  MapActivity.class);
+                    startActivity(intent);
+                }
+
 
             }
         });
 
 
     }
+
 
 
     public boolean isServiceOK(){
