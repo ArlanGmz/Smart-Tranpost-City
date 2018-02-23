@@ -77,7 +77,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
-        mGps =findViewById(R.id.ic_gps);
+        //mGps =findViewById(R.id.ic_gps);
 
 
         getLocationPermission();
@@ -93,6 +93,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.setOnMarkerClickListener(this);
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(dlsu));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(dlsu,DEFAULT_ZOOM));
 
         /*LatLngBounds bounds = new LatLngBounds.Builder()
                 .include(central)
@@ -102,7 +103,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 50));*/
 
         if (mLocationPermissionGranted) {
-            getDeviceLocation();
+            //getDeviceLocation();
 
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                     != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
@@ -110,8 +111,8 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
                 return;
             }
-            mMap.setMyLocationEnabled(true);
-            mMap.getUiSettings().setMyLocationButtonEnabled(false);
+            //mMap.setMyLocationEnabled(true);
+            //mMap.getUiSettings().setMyLocationButtonEnabled(false);
 
             init();
 
@@ -157,17 +158,17 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
 
     private void init(){
         Log.d(TAG, "init: initializing");
-        mGps.setOnClickListener(new View.OnClickListener() {
+        /*mGps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: clicked gps icon");
                 getDeviceLocation();
             }
-        });
+        });*/
         //hideSoftKeyboard();
     }
 
-    private void getDeviceLocation(){
+    /*private void getDeviceLocation(){
         Log.d(TAG, "getDeviceLocation: getting the current devices location");
         mFusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this);
 
@@ -181,7 +182,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
                             Log.d(TAG, "onComplete: found lcoation");
                             Location currentLocation = (Location) task.getResult();
 
-                            moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),DEFAULT_ZOOM, "My Location");
+                            //moveCamera(new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude()),DEFAULT_ZOOM, "My Location");
                         }else{
                             Log.d(TAG, "onComplete: current location is null");
                             Toast.makeText(MapActivity.this, "unable to get current location", Toast.LENGTH_SHORT).show();
@@ -207,7 +208,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         }
 
         hideSoftKeyboard();
-    }
+    }*/
 
 
 
