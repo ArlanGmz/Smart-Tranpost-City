@@ -40,6 +40,7 @@ public class StopActivity extends AppCompatActivity{
         textView = findViewById(R.id.LocationName);
         final String location = getIntent().getStringExtra("Location");
         textView.setText(location);
+        listView= findViewById(R.id.shuttle);
 
 
 
@@ -91,7 +92,7 @@ public class StopActivity extends AppCompatActivity{
 
 
         }
-        listView= (ListView)findViewById(R.id.shuttle);
+
         final CustomListView customListView= new CustomListView(this,Stopss,Arrive,Depart);
         listView.setAdapter(customListView);
 

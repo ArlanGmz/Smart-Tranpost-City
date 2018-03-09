@@ -38,8 +38,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".TabActivity"/>
+        <activity android:name=".DriverActivity"/>
         <activity android:name=".StopActivity"/>
         <activity android:name=".ShuttleActivity"/>
+        <activity android:name=".DriverShuttleResv"/>
     </application>
 
 </manifest>

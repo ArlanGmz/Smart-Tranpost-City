@@ -48,7 +48,11 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "You did not input a username or password ", Toast.LENGTH_SHORT).show();
                 }
-                else //if(Integer.parseInt(UserID) >= 1000000)
+                else if(UserID.matches("driver")){
+                    Intent intent = new Intent(MainActivity.this,  DriverActivity.class);
+                    startActivity(intent);
+                }
+                else
                 {
                     Intent intent = new Intent(MainActivity.this,  TabActivity.class);
                     startActivity(intent);
