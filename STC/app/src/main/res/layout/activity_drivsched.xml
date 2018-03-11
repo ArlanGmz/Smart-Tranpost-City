@@ -23,10 +23,10 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="50dp"
             android:layout_marginTop="5dp"
-            android:layout_toRightOf="@id/backbtn"
+            android:layout_toRightOf="@id/backbton"
             android:text="DLSU STC"
             android:textColor="#000"
-            android:textSize="28dp"
+            android:textSize="26dp"
             android:textAlignment="center"/>
 
         <android.support.v7.widget.AppCompatTextView
@@ -39,11 +39,11 @@
             android:layout_marginRight="50dp"
             android:text="Shuttle"
             android:textColor="#fff"
-            android:textSize="25dp"
+            android:textSize="24dp"
             android:textAlignment="center" />
 
         <ImageView
-            android:id="@+id/backbtn"
+            android:id="@+id/backbton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentLeft="true"

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
+            "outputFile": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rSG\\values-en-rSG.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.8.0.aar\\6caf541e3bf0a2f798e95a07ae6cae96\\res\\values-en-rSG\\values.xml",

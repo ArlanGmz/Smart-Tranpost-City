@@ -4,7 +4,6 @@ package com.example.arlangomez.stc;
  * Created by ArlanGomez on 05/02/2018.
  */
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +11,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class StopActivity extends AppCompatActivity{
+public class StopActivity extends AppCompatActivity {
     private TextView textView;
     private ImageView backButton;
 
