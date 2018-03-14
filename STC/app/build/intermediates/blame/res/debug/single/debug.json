@@ -272,6 +272,10 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable\\cast_ic_mini_controller_stop.xml"
     },
     {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_popup.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\layout\\popup.xml"
+    },
+    {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4aca27d5ff964db42db1f20573d9a7cb\\res\\layout\\design_navigation_menu.xml"
     },
