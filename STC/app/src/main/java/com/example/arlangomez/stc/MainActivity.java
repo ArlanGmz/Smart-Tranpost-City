@@ -10,10 +10,19 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
+    public String string = "heello";
+    LoginWorker loginWorker = new LoginWorker(new LoginWorker.AsyncResponse() {
+        @Override
+        public void processFinish(String output) {
+            string = output;
+        }
+    });
+
 
     private static final String TAG = "MainActivity";
 
@@ -34,8 +43,9 @@ public class MainActivity extends AppCompatActivity {
         }*/
     }
 
-    private void init(){
+    public void init(){
         Button btnMap =  findViewById(R.id.btnMap);
+
         btnMap.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -48,14 +58,28 @@ public class MainActivity extends AppCompatActivity {
                 {
                     Toast.makeText(MainActivity.this, "You did not input a username or password ", Toast.LENGTH_SHORT).show();
                 }
-                else if(UserID.matches("driver")){
-                    Intent intent = new Intent(MainActivity.this,  DriverActivity.class);
-                    startActivity(intent);
-                }
-                else if(UserID!="driver")
-                {
-                    Intent intent = new Intent(MainActivity.this,  TabActivity.class);
-                    startActivity(intent);
+                else{
+                    String status = "login";
+                    loginWorker = new LoginWorker(new LoginWorker.AsyncResponse() {
+                        @Override
+                        public void processFinish(String output) {
+                            string = (String)output;
+                        }
+                    });
+                    loginWorker.execute(status, UserID, PassW);
+                    Toast.makeText(MainActivity.this, "result:"+ string.length()+" "+string, Toast.LENGTH_SHORT).show();
+
+                    if(string.equals("01")){
+                        Intent intent = new Intent(MainActivity.this,  TabActivity.class);
+                        startActivity(intent);
+                    }
+                    else if(string.equals("02")){
+                        Intent intent = new Intent(MainActivity.this,  DriverActivity.class);
+                        startActivity(intent);
+                    }
+                    else {
+                        Toast.makeText(MainActivity.this, "Invalid Username/Password", Toast.LENGTH_SHORT).show();
+                    }
                 }
 
 
@@ -87,4 +111,5 @@ public class MainActivity extends AppCompatActivity {
         return false;
 
     }
+
 }
