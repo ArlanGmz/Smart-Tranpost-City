@@ -29,10 +29,21 @@
             android:id="@+id/Dest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/from"
+            android:layout_toRightOf="@id/going"
             android:layout_below="@id/etd"
             android:textColor="#333"
             android:textSize="22dp"/>
+        <ImageView
+            android:id="@+id/going"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/etd"
+            android:layout_toRightOf="@id/from"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_goingto"/>
 
 
         <TextView

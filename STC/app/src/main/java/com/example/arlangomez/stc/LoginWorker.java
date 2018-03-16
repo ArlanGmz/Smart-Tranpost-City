@@ -34,7 +34,7 @@ public class LoginWorker extends AsyncTask<String, Void, String>{
     @Override
     protected String doInBackground(String... strings) {
         String status = strings[0];
-        String locate_url = "http://172.16.2.94/locate.php";
+        String locate_url = "http://172.16.6.948/locate.php";
         result = "";
         if(status.equals("login")){
             try {

@@ -700,12 +700,12 @@
         "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\drawable-xhdpi\\ic_back.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_plusone_small_off_client.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\45ff81d1a97643e75e47035dbfb998c7\\res\\drawable-hdpi-v4\\ic_plusone_small_off_client.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\color_wallet_primary_text_holo_light.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-wallet-11.8.0.aar\\6caf541e3bf0a2f798e95a07ae6cae96\\res\\color\\wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_ic_plusone_small_off_client.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\45ff81d1a97643e75e47035dbfb998c7\\res\\drawable-hdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_disabled_color_18.png.flat",
@@ -774,6 +774,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi-v4_cast_album_art_placeholder.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-nodpi-v4\\cast_album_art_placeholder.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_goingto.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\drawable-mdpi\\ic_goingto.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1528,6 +1532,10 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxxhdpi-v4\\ic_group_expand_10.png"
     },
     {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_goingto.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\drawable-xhdpi\\ic_goingto.png"
+    },
+    {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_19_dark.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_19_dark.png"
     },
@@ -1726,6 +1734,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mr_dialog_close_dark.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable\\mr_dialog_close_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_goingto.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\drawable-xxhdpi\\ic_goingto.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -2834,6 +2846,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_tooltip.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha1.aar\\8c19d696e00bb04c67e5ba134316b46c\\res\\layout\\abc_tooltip.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_passenger_parts.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\layout\\passenger_parts.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
@@ -4410,6 +4426,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_15_dark.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_15_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_goingto.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\src\\main\\res\\drawable-hdpi\\ic_goingto.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Desktop\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
