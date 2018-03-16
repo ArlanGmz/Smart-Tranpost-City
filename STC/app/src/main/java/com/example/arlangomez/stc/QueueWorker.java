@@ -30,12 +30,12 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
     public QueueWorker(AsyncResponse delegate){
         this.delegate=delegate;
     }
-    public String result = "";
+    String result;
 
     @Override
     protected String doInBackground(String... strings) {
         String status = strings[0];
-        String locate_url = "http://172.16.2.94/locate.php";
+        String locate_url = "http://172.16.6.98/locate.php";
         result = "";
         if(status.equals("queue")){
             try {
@@ -57,7 +57,7 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String line;
                 while((line=bufferedReader.readLine())!=null){
-                    result = line;
+                    result += line;
                 }
                 bufferedReader.close();
                 inputStream.close();

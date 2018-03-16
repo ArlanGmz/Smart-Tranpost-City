@@ -46,7 +46,7 @@ public class LocFragment extends Fragment {
     @Override
     public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         Bundle B = this.getArguments();
-        String userID = B.getString("UserID");
+        final String userID = B.getString("UserID");
         Stoplist.add("DLSU-Laguna");
         Stoplist.add("Nuvali");
         Stoplist.add("Laguna Central");
@@ -63,7 +63,7 @@ public class LocFragment extends Fragment {
                     Intent intent = new Intent(getActivity(), StopActivity.class);
                     String message = Stoplist.get(i);
                     intent.putExtra("Location", message);
-                    intent.putExtra("Username",UserID);
+                    intent.putExtra("Username",userID);
                     startActivity(intent);
 
 
