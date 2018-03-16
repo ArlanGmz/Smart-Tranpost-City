@@ -18,18 +18,20 @@ import java.util.ArrayList;
 public class CustomListView extends ArrayAdapter<String> {
 
     private ArrayList<String> Stops = new ArrayList<>();
-    private ArrayList<String> Arrive = new ArrayList<>();
+    private ArrayList<String> ID = new ArrayList<>();
     private ArrayList<String> Depart = new ArrayList<>();
+    int position;
 
     private Activity context;
 
-    public CustomListView(Activity context, ArrayList<String> stops, ArrayList<String> arrive, ArrayList<String> depart){
+    public CustomListView(Activity context, ArrayList<String> stops, ArrayList<String> depart, ArrayList<String> id){
         super(context, R.layout.stop_parts, stops);
 
         this.context=context;
         Stops=stops;
-        Arrive=arrive;
+        //Arrive=arrive;
         Depart=depart;
+        ID = id;
     }
 
     @NonNull
@@ -47,9 +49,10 @@ public class CustomListView extends ArrayAdapter<String> {
             viewHolder= (ViewHolder) r.getTag();
         }
 
-        viewHolder.Loc.setText(Stops.get(0));
-        viewHolder.eta.setText(Arrive.get(position));
+        viewHolder.Loc.setText(Stops.get(position));
+       // viewHolder.eta.setText(Arrive.get(position));
         viewHolder.etd.setText(Depart.get(position));
+        this.position=position;
 
 
 
@@ -60,8 +63,11 @@ public class CustomListView extends ArrayAdapter<String> {
         TextView Loc, eta, etd;
         ViewHolder(View v){
             Loc=v.findViewById(R.id.Dest);
-            eta=v.findViewById(R.id.Arr);
+           // eta=v.findViewById(R.id.Arr);
             etd=v.findViewById(R.id.Dep);
         }
+    }
+    public String getID(){
+        return ID.get(position);
     }
 }

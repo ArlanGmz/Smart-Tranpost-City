@@ -1,7 +1,5 @@
 package com.example.arlangomez.stc;
 
-import android.app.AlertDialog;
-import android.content.Context;
 import android.os.AsyncTask;
 
 import java.io.BufferedReader;

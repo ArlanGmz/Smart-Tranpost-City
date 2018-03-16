@@ -20,6 +20,7 @@ public class DriverActivity extends AppCompatActivity {
     ArrayList<String> Stopss = new ArrayList<>();
     ArrayList<String> Arrive = new ArrayList<>();
     ArrayList<String> Depart = new ArrayList<>();
+    ArrayList<String> ID = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +37,14 @@ public class DriverActivity extends AppCompatActivity {
         Depart.add("6:30");
 
 
-        final CustomListView customListView= new CustomListView(this,Stopss,Arrive,Depart);
+        final CustomListView customListView= new CustomListView(this,Stopss,Depart, ID);
         listView.setAdapter(customListView);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Intent intent = new Intent(DriverActivity.this, DriverShuttleResv.class);
-                intent.putExtra("Arrive", Arrive.get(0) );
+                //intent.putExtra("Arrive", Arrive.get(0) );
                 intent.putExtra("Depart", Depart.get(0) );
                 intent.putExtra("Destination", Stopss.get(0) );
                 intent.putExtra("CurLocation", Stops.get(0));

@@ -24,6 +24,7 @@ public class StopActivity extends AppCompatActivity {
     ArrayList<String> Stopss = new ArrayList<>();
     ArrayList<String> Arrive = new ArrayList<>();
     ArrayList<String> Depart = new ArrayList<>();
+    ArrayList<String> ID = new ArrayList<>();
 
 
     @Override
@@ -34,90 +35,348 @@ public class StopActivity extends AppCompatActivity {
         Stops.add("Nuvali");
         Stops.add("Laguna Central");
 
+        int dlsuid = 100;
+        int Lcenid = 200;
+        int nuvid = 300;
         textView = findViewById(R.id.LocationName);
         final String location = getIntent().getStringExtra("Location");
         textView.setText(location);
-        listView= findViewById(R.id.shuttle);
+        listView = findViewById(R.id.shuttle);
 
 
-
-        for (int i=0;i<Stops.size();i++)
-        {
+        for (int i = 0; i < Stops.size(); i++) {
             if (Stops.get(i).matches(location))
                 Stops.remove(i);
         }
-        if(location!="DLSU-Laguna"){
-            int m=30;
-            int hour ;
-            for( hour=6; hour<9;){
-                if(m-15<0)
-                    Arrive.add(String.valueOf(hour-1)+":45");
-                else if(m-15==0)
-                    Arrive.add(String.valueOf(hour)+":00");
-                else
-                    Arrive.add(String.valueOf(hour)+":"+ String.valueOf(m-15));
+        if (!location.equals("DLSU-Laguna")) {
 
-                if(m==60){
-                    m=0;
-                    hour+=1;
+            int m = 30;
+            int hour;
+            for (hour = 6; hour < 9; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
                 }
-                if(m==0)
-                    Depart.add(String.valueOf(hour)+":00");
-                else
-                    Depart.add(String.valueOf(hour)+":"+ String.valueOf(m));
-                Stopss.add("DLSU-Laguna");
-                m+=15;
+                if (m == 0 && hour != 9) {
+                    Depart.add(String.valueOf(hour) + ":00 am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour != 9) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                }
+                m += 15;
             }
-            /*m=20;
-            for( hour=9; hour<20;){
-                if(m==0 && hour<=12)
-                    Arrive.add(String.valueOf(hour)+":00");
-                else if(hour<=12)
-                    Arrive.add(String.valueOf(hour)+":"+ String.valueOf(m));
-                else if(m==0 && hour>12)
-                    Arrive.add(String.valueOf(hour-12)+":"+ String.valueOf(m));
-                if(hour<11)
-                    m+=40;
-                else if(hour )
-                if(m>=60){
-                    m-=60;
-                    hour+=1;
+            m = 20;
+            for (hour = 9; hour < 11; ) {
+
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
                 }
-                Depart.add(String.valueOf(hour)+":"+ String.valueOf(m-5));
-                Stopss.add("DLSU-Laguna");
-            }*/
+                if (m == 0 && hour != 11) {
+                    Depart.add(String.valueOf(hour) + ":00" + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour != 11) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                }
+                m += 40;
+
+            }
+            m = 0;
+            for (hour = 11; hour < 13; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 13) {
+                    Depart.add(String.valueOf(hour) + ":00" + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour == 12) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour != 13) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                }
+                m += 45;
+            }
+            m = 30;
+            for (hour = 13; hour < 15; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 15) {
+                    Depart.add(String.valueOf(hour - 12) + ":00" + " pm");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour != 15) {
+                    Depart.add(String.valueOf(hour - 12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                }
+                m += 50;
+            }
+            m = 30;
+            for (hour = 15; hour < 20; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 20) {
+                    Depart.add(String.valueOf(hour - 12) + ":00" + " pm");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                } else if (hour != 20) {
+                    Depart.add(String.valueOf(hour - 12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("DLSU-Laguna");
+                    if (location.matches("Laguna Central")) {
+                        Lcenid += 1;
+                        ID.add(String.valueOf(Lcenid));
+                    } else if (location.matches("Nuvali")) {
+                        nuvid = +1;
+                        ID.add(String.valueOf(nuvid));
+                    }
+                }
+                m += 30;
+            }
+
+
+
+        }
+        else if(location.matches("DLSU-Laguna")){
+            int m = 20;
+            int hour;
+            for (hour = 9; hour < 11; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 11) {
+                    Depart.add(String.valueOf(hour) + ":00 am");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour) + ":00 am");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                } else if (hour != 11) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                }
+                m += 40;
+            }
+            m = 30;
+            for (hour = 11; hour < 13; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 13) {
+                    Depart.add(String.valueOf(hour) + ":00 am");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour) + ":00 am");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                } else if (hour == 12) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                } else if (hour != 13) {
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour) + ":" + String.valueOf(m) + " am");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                }
+                m += 45;
+            }
+            m = 0;
+            for (hour = 13; hour < 15; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 15) {
+                    Depart.add(String.valueOf(hour - 12) + ":00 pm");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour-12) + ":00 pm");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                } else if (hour != 15) {
+                    Depart.add(String.valueOf(hour - 12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour-12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                }
+                if (hour < 14)
+                    m += 60;
+                else {
+                    m += 40;
+                }
+            }
+            m = 0;
+            for (hour = 15; hour < 20; ) {
+                if (m >= 60) {
+                    m -= 60;
+                    hour += 1;
+                }
+                if (m == 0 && hour != 20) {
+                    Depart.add(String.valueOf(hour - 12) + ":00 pm");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour-12) + ":00 pm");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                } else if (hour != 20) {
+                    Depart.add(String.valueOf(hour - 12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Laguna Central");
+                    Depart.add(String.valueOf(hour-12) + ":" + String.valueOf(m) + " pm");
+                    Stopss.add("Nuvali");
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                    dlsuid += 1;
+                    ID.add(String.valueOf(dlsuid));
+                }
+                m += 30;
+            }
+            if (hour == 20 && m == 0) {
+                Depart.add(String.valueOf(hour - 12) + ":00" + " pm");
+                Stopss.add("Laguna Central");
+                Depart.add(String.valueOf(hour - 12) + ":00"  + " pm");
+                Stopss.add("Nuvali");
+                dlsuid += 1;
+                ID.add(String.valueOf(dlsuid));
+                dlsuid += 1;
+                ID.add(String.valueOf(dlsuid));
+            }
+
+        }
+
+            final CustomListView customListView = new CustomListView(this, Stopss, Depart, ID);
+            listView.setAdapter(customListView);
+
+            backButton = findViewById(R.id.backbtn);
+            backButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    finish();
+                }
+            });
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                    Intent intent = new Intent(StopActivity.this, ShuttleActivity.class);
+                    //intent.putExtra("Arrive", Arrive.get(i) );
+                    intent.putExtra("Depart", Depart.get(i));
+                    intent.putExtra("Destination", Stopss.get(i));
+                    intent.putExtra("CurLocation", location);
+                    intent.putExtra("ID",ID.get(i).toString());
+                    startActivity(intent);
+
+
+                }
+            });
 
 
         }
 
-        final CustomListView customListView= new CustomListView(this,Stopss,Arrive,Depart);
-        listView.setAdapter(customListView);
-
-        backButton = findViewById(R.id.backbtn);
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
-                Intent intent = new Intent(StopActivity.this, ShuttleActivity.class);
-                intent.putExtra("Arrive", Arrive.get(i) );
-                intent.putExtra("Depart", Depart.get(i) );
-                intent.putExtra("Destination", Stopss.get(i) );
-                intent.putExtra("CurLocation", location);
-                startActivity(intent);
-
-
-            }
-        });
-
-
-
-    }
 
 
 }
