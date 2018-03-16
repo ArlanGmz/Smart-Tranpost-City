@@ -50,7 +50,7 @@ public class ShuttleActivity extends AppCompatActivity {
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
         final String id = getIntent().getStringExtra("ID");
-        iD= getIntent().getStringExtra("Username");
+        iD= getIntent().getStringExtra("UserID");
 
         curloc = findViewById(R.id.LocationName);
         curloc.setText(location);

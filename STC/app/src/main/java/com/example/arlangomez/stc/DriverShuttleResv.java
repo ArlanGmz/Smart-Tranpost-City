@@ -38,14 +38,14 @@ public class DriverShuttleResv extends AppCompatActivity {
         final String destination = getIntent().getStringExtra("Destination");
 
 
-        for(int i = 1; i<4; i += 1)
+        for(int i = 1; i<4; i++)
             num.add(String.valueOf(i));
 
         id.add("11502363");
         id.add("11502346");
         id.add("11402395");
 
-        final passengerlist Passenger= new passengerlist(this,num, id);
+        final passengerlist Passenger= new passengerlist(this, num, id);
         listView.setAdapter(Passenger);
 
         trip = findViewById(R.id.LocationName);
