@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
@@ -23,6 +24,17 @@ public class ShuttleActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private RelativeLayout mainsh;
     private ImageView backButton;
+    private EditText userID = (findViewById(R.id.UserID));
+    private String iD = userID.getText().toString();
+
+    public String string = "";
+    QueueWorker queueWorker = new QueueWorker(new QueueWorker.AsyncResponse() {
+        @Override
+        public void processFinish(String output) {
+            string = output;
+        }
+
+    });
 
     private RelativeLayout rel;
 
@@ -73,6 +85,17 @@ public class ShuttleActivity extends AppCompatActivity {
                 if(queue.getText().equals("Queue")){
                     if(queueNum<10) {
                         queueNum+=1;
+
+                        String Status = "queue";
+                        queueWorker = new QueueWorker(new QueueWorker.AsyncResponse() {
+                            @Override
+                            public void processFinish(String output) {
+                                string = (String)output;
+                            }
+                        });
+                        queueWorker.execute(Status, iD, id);
+                        Toast.makeText(ShuttleActivity.this, "result:"+ string.length()+" "+string, Toast.LENGTH_SHORT).show();
+
 
                         queueNo.setText(String.valueOf(queueNum) );
                         status.setText("You are now Queued");

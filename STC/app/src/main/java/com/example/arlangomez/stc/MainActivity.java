@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity{
                         }
                     });
                     loginWorker.execute(status, UserID, PassW);
-                    Toast.makeText(MainActivity.this, "result:"+ string.length()+" "+string, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "result:"+string, Toast.LENGTH_SHORT).show();
 
-                    if(string.equals("01")){
+                    if(string.equals("1")){
                         Intent intent = new Intent(MainActivity.this,  TabActivity.class);
                         startActivity(intent);
                     }
-                    else if(string.equals("02")){
+                    else if(string.equals("2")){
                         Intent intent = new Intent(MainActivity.this,  DriverActivity.class);
                         startActivity(intent);
                     }

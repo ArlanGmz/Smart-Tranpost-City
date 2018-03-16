@@ -19,14 +19,15 @@ import java.net.URLEncoder;
  */
 
 
-public class LoginWorker extends AsyncTask<String, Void, String>{
+
+public class QueueWorker extends AsyncTask<String, Void, String>{
 
     public interface AsyncResponse {
         void processFinish(String output);
     }
 
     public AsyncResponse delegate = null;
-    public LoginWorker(AsyncResponse delegate){
+    public QueueWorker(AsyncResponse delegate){
         this.delegate=delegate;
     }
     public String result = "";
@@ -34,12 +35,12 @@ public class LoginWorker extends AsyncTask<String, Void, String>{
     @Override
     protected String doInBackground(String... strings) {
         String status = strings[0];
-        String locate_url = "http://172.16.6.98/locate.php";
+        String locate_url = "http://172.16.2.94/locate.php";
         result = "";
-        if(status.equals("login")){
+        if(status.equals("queue")){
             try {
                 String id = strings[1];
-                String password = strings[2];
+                String schedid = strings[2];
                 URL url = new URL(locate_url);
                 HttpURLConnection httpURLConnection =(HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -47,7 +48,7 @@ public class LoginWorker extends AsyncTask<String, Void, String>{
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "utf-8"));
-                String post_data = URLEncoder.encode("status","UTF-8")+"="+URLEncoder.encode(status,"UTF-8")+"&"+URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8")+"&"+URLEncoder.encode("password","UTF-8")+"="+URLEncoder.encode(password,"UTF-8");
+                String post_data = URLEncoder.encode("status","UTF-8")+"="+URLEncoder.encode(status,"UTF-8")+"&"+URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8")+"&"+URLEncoder.encode("schedid","UTF-8")+"="+URLEncoder.encode(schedid,"UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -87,6 +88,3 @@ public class LoginWorker extends AsyncTask<String, Void, String>{
         super.onProgressUpdate(values);
     }
 }
-
-
-
