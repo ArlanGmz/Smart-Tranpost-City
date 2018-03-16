@@ -24,8 +24,7 @@ public class ShuttleActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private RelativeLayout mainsh;
     private ImageView backButton;
-    private EditText userID = (findViewById(R.id.UserID));
-    private String iD = userID.getText().toString();
+    private String iD ;
 
     public String string = "";
     QueueWorker queueWorker = new QueueWorker(new QueueWorker.AsyncResponse() {
@@ -51,6 +50,7 @@ public class ShuttleActivity extends AppCompatActivity {
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
         final String id = getIntent().getStringExtra("ID");
+        iD= getIntent().getStringExtra("Username");
 
         curloc = findViewById(R.id.LocationName);
         curloc.setText(location);

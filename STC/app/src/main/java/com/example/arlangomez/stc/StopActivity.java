@@ -38,6 +38,7 @@ public class StopActivity extends AppCompatActivity {
         int dlsuid = 100;
         int Lcenid = 200;
         int nuvid = 300;
+        final String UserID = getIntent().getStringExtra("Username");
         textView = findViewById(R.id.LocationName);
         final String location = getIntent().getStringExtra("Location");
         textView.setText(location);
@@ -368,6 +369,7 @@ public class StopActivity extends AppCompatActivity {
                     intent.putExtra("Destination", Stopss.get(i));
                     intent.putExtra("CurLocation", location);
                     intent.putExtra("ID",ID.get(i).toString());
+                    intent.putExtra("UserID",UserID);
                     startActivity(intent);
 
 

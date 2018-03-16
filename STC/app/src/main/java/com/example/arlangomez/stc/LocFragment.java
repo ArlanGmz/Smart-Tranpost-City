@@ -1,5 +1,6 @@
 package com.example.arlangomez.stc;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -20,8 +21,21 @@ import java.util.ArrayList;
 public class LocFragment extends Fragment {
     private static final String TAG = "Tab2Fragment";
     ListView list;
+    private String UserID;
 
     ArrayList<String> Stoplist= new ArrayList<>();
+
+    //@SuppressLint("ValidFragment")
+
+   /* public LocFragment()
+    {
+        super();
+    }
+
+    public LocFragment(String username){
+        super();
+        UserID=username;
+    }*/
 
 
 
@@ -30,7 +44,9 @@ public class LocFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Bundle B = this.getArguments();
+        String userID = B.getString("UserID");
         Stoplist.add("DLSU-Laguna");
         Stoplist.add("Nuvali");
         Stoplist.add("Laguna Central");
@@ -47,6 +63,7 @@ public class LocFragment extends Fragment {
                     Intent intent = new Intent(getActivity(), StopActivity.class);
                     String message = Stoplist.get(i);
                     intent.putExtra("Location", message);
+                    intent.putExtra("Username",UserID);
                     startActivity(intent);
 
 

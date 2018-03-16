@@ -71,10 +71,12 @@ public class MainActivity extends AppCompatActivity{
 
                     if(string.equals("1")){
                         Intent intent = new Intent(MainActivity.this,  TabActivity.class);
+                        intent.putExtra("Username",UserID);
                         startActivity(intent);
                     }
                     else if(string.equals("2")){
                         Intent intent = new Intent(MainActivity.this,  DriverActivity.class);
+                        intent.putExtra("Username",UserID);
                         startActivity(intent);
                     }
                     else {

@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 public class TabActivity extends AppCompatActivity {
 
+    private String UserID;
+
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -40,6 +42,7 @@ public class TabActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tab_activity);
+        UserID = getIntent().getStringExtra("Username");
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -99,9 +102,15 @@ public class TabActivity extends AppCompatActivity {
             switch (position){
                 case 0:
                     fragment= new AccFragment();
+                    Bundle b = new Bundle();
+                    b.putString("UserID",UserID);
+                    fragment.setArguments(b);
                     break;
                 case 1:
                     fragment= new LocFragment();
+                    Bundle a = new Bundle();
+                    a.putString("UserID",UserID);
+                    fragment.setArguments(a);
                     break;
                 case 2:
                     fragment= new MapFragment();
