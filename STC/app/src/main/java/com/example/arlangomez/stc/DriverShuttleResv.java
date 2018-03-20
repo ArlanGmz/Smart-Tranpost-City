@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,14 @@ public class DriverShuttleResv extends AppCompatActivity {
     ArrayList<String > id = new ArrayList<>();
     ArrayList<String > num = new ArrayList<>();
     ImageView backButton;
+    public String string = "hi";
+    ListWorker listWorker = new ListWorker(new ListWorker.AsyncResponse() {
+        @Override
+        public void processFinish(String output) {
+            string = output;
+        }
 
+    });
 
 
 
@@ -32,11 +40,27 @@ public class DriverShuttleResv extends AppCompatActivity {
         empty = findViewById(R.id.empty);
 
 
+
+
         final String location = getIntent().getStringExtra("CurLocation");
         final String arrive = getIntent().getStringExtra("Arrive");
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
         final String schedID = getIntent().getStringExtra("SchedID");
+
+        String Status = "list";
+        listWorker = new ListWorker(new ListWorker.AsyncResponse() {
+            @Override
+            public void processFinish(String output) {
+                string = "hell";
+            }
+        });
+        listWorker.execute(Status, schedID);
+        Toast.makeText(DriverShuttleResv.this, "result:"+ schedID+"::"+string+"::", Toast.LENGTH_SHORT).show();
+        String[] split = string.split("\\s+");
+
+        for(int i = 0; i < split.length; i++)
+            Toast.makeText(DriverShuttleResv.this, "result:"+ split[i], Toast.LENGTH_SHORT).show();
 
 
         for(int i = 1; i<4; i++)

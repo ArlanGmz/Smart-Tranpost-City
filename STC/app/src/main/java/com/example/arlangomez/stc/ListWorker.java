@@ -1,5 +1,7 @@
 package com.example.arlangomez.stc;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.os.AsyncTask;
 
 import java.io.BufferedReader;
@@ -19,28 +21,28 @@ import java.net.URLEncoder;
  */
 
 
+public class ListWorker extends AsyncTask<String, Void, String>{
 
-public class QueueWorker extends AsyncTask<String, Void, String>{
 
     public interface AsyncResponse {
         void processFinish(String output);
     }
 
-    public AsyncResponse delegate = null;
-    public QueueWorker(AsyncResponse delegate){
+    public ListWorker.AsyncResponse delegate = null;
+    public ListWorker(ListWorker.AsyncResponse delegate){
         this.delegate=delegate;
     }
     public String result = "";
+
 
     @Override
     protected String doInBackground(String... strings) {
         String status = strings[0];
         String locate_url = "http://172.16.2.52/locate.php";
         result = "";
-        if(status.equals("queue")){
+        if(status.equals("list")){
             try {
-                String id = strings[1];
-                String schedid = strings[2];
+                String schedid = strings[1];
                 URL url = new URL(locate_url);
                 HttpURLConnection httpURLConnection =(HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -48,7 +50,7 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
                 httpURLConnection.setDoInput(true);
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "utf-8"));
-                String post_data = URLEncoder.encode("status","UTF-8")+"="+URLEncoder.encode(status,"UTF-8")+"&"+URLEncoder.encode("id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8")+"&"+URLEncoder.encode("schedid","UTF-8")+"="+URLEncoder.encode(schedid,"UTF-8");
+                String post_data = URLEncoder.encode("status","UTF-8")+"="+URLEncoder.encode(status,"UTF-8")+"&"+URLEncoder.encode("schedid","UTF-8")+"="+URLEncoder.encode(schedid,"UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();
@@ -57,7 +59,7 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String line;
                 while((line=bufferedReader.readLine())!=null){
-                    result = line;
+                    result += line;
                 }
                 bufferedReader.close();
                 inputStream.close();
@@ -69,7 +71,7 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
                 e.printStackTrace();
             }
         }
-        return result;
+        return null;
     }
     @Override
     protected void onPreExecute() {
@@ -88,3 +90,5 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
         super.onProgressUpdate(values);
     }
 }
+
+
