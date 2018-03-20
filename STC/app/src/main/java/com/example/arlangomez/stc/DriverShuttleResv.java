@@ -1,5 +1,6 @@
 package com.example.arlangomez.stc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,7 @@ public class DriverShuttleResv extends AppCompatActivity {
     ListView listView;
     ArrayList<String > id = new ArrayList<>();
     ArrayList<String > num = new ArrayList<>();
-    ImageView backButton;
+    ImageView backButton, refresh;
     public String string = "hi";
     ListWorker listWorker = new ListWorker(new ListWorker.AsyncResponse() {
         @Override
@@ -87,6 +88,16 @@ public class DriverShuttleResv extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        refresh = findViewById(R.id.refresh);
+        refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
             }
         });
 
