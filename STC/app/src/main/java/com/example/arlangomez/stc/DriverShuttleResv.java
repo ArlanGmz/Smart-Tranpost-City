@@ -52,24 +52,15 @@ public class DriverShuttleResv extends AppCompatActivity {
 
 
 
-        for(int i = 1; i<4; i++)
-            num.add(String.valueOf(i));
 
-        id.add("11502363");
-        id.add("11502346");
-        id.add("11402395");
 
-        final passengerlist Passenger= new passengerlist(this, num, id);
-        listView.setAdapter(Passenger);
 
         trip = findViewById(R.id.LocationName);
         trip.setText(location + " -> "+ destination);
         time = findViewById(R.id.time);
         time.setText(arrive);
 
-        if (listView.getCount()==0){
-            empty.setText("No one is currently reserved for this trip");
-        }
+
 
         backButton = findViewById(R.id.backbton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -94,8 +85,20 @@ public class DriverShuttleResv extends AppCompatActivity {
                 Toast.makeText(DriverShuttleResv.this, "result:"+ schedID+"::"+string+"::", Toast.LENGTH_SHORT).show();
                 String[] split = string.split("\\s+");
 
-                for(int i = 0; i < split.length; i++)
-                    Toast.makeText(DriverShuttleResv.this, "result:"+ split[i], Toast.LENGTH_SHORT).show();
+                for(int i = 0; i < split.length; i++) {
+                    Toast.makeText(DriverShuttleResv.this, "result:" + split[i], Toast.LENGTH_SHORT).show();
+                    num.add(String.valueOf(i+1));
+                    id.add(split[i]);
+                }
+
+                final passengerlist Passenger= new passengerlist(this, num, id);
+                listView.setAdapter(Passenger);
+
+                if (listView.getCount()==0){
+                    empty.setText("No one is currently reserved for this trip");
+                }
+
+
             }
         });
 
