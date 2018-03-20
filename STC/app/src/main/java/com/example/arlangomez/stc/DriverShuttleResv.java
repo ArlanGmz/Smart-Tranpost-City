@@ -63,11 +63,11 @@ public class DriverShuttleResv extends AppCompatActivity {
         final String schedID = getIntent().getStringExtra("SchedID");
 
         final String Status = "list";
-        String splt = GetList(Status, schedID);
 
-        String[] split = splt.split("\\s+");
 
-        for(int i = 0; i<split.length; i++) {
+        //String[] split = splt.split("\\s+");
+
+        /*for(int i = 0; i<split.length; i++) {
             num.add(String.valueOf(i+1));
             id.add(split[i]);
         }
@@ -76,7 +76,7 @@ public class DriverShuttleResv extends AppCompatActivity {
         id.add("11502346");
         id.add("11402395");*/
 
-        final passengerlist Passenger= new passengerlist( this, num, id);
+        passengerlist Passenger= new passengerlist( this, num, id);
         listView.setAdapter(Passenger);
 
         trip = findViewById(R.id.LocationName);
@@ -101,11 +101,11 @@ public class DriverShuttleResv extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = getIntent();
+                /*Intent intent = getIntent();
                 finish();
-                startActivity(intent);
+                startActivity(intent);*/
 
-                /*listWorker = new ListWorker(new ListWorker.AsyncResponse() {
+                listWorker = new ListWorker(new ListWorker.AsyncResponse() {
                     @Override
                     public void processFinish(String output) {
                         string = output;
@@ -114,15 +114,24 @@ public class DriverShuttleResv extends AppCompatActivity {
                 listWorker.execute(Status, schedID);
                 Toast.makeText(DriverShuttleResv.this, "result:"+ schedID+"::"+string+"::", Toast.LENGTH_SHORT).show();
                 String[] split = string.split("\\s+");
+                num.clear();
+                id.clear();
 
                 for(int i = 0; i < split.length; i++) {
                     Toast.makeText(DriverShuttleResv.this, "result:" + split[i], Toast.LENGTH_SHORT).show();
+                    num.add(String.valueOf(num.size()+1));
+                    id.add(split[i]);
                 }
+
+                passengerlist Passenger= new passengerlist( DriverShuttleResv.this, num, id);
+                listView.setAdapter(Passenger);
 
 
                 if (listView.getCount()==0){
                     empty.setText("No one is currently reserved for this trip");
-                }*/
+                }
+                else
+                    empty.setText("");
 
 
             }
@@ -130,7 +139,7 @@ public class DriverShuttleResv extends AppCompatActivity {
 
     }
 
-    public String GetList(String Status, String schedID){
+    /*public String GetList(String Status, String schedID){
         String result = "";
 
         String status = Status;
@@ -169,5 +178,5 @@ public class DriverShuttleResv extends AppCompatActivity {
         }
 
         return result;
-    }
+    }*/
 }
