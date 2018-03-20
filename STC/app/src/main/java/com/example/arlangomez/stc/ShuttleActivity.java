@@ -49,7 +49,7 @@ public class ShuttleActivity extends AppCompatActivity {
         //final String arrive = getIntent().getStringExtra("Arrive");
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
-        final String Schedid = getIntent().getStringExtra("ID");
+        final String id = getIntent().getStringExtra("ID");
         iD= getIntent().getStringExtra("UserID");
 
         curloc = findViewById(R.id.LocationName);
@@ -93,8 +93,8 @@ public class ShuttleActivity extends AppCompatActivity {
                                 string = (String)output;
                             }
                         });
-                        queueWorker.execute(Status, iD, Schedid);
-                        Toast.makeText(ShuttleActivity.this, "result:"+string, Toast.LENGTH_SHORT).show();
+                        queueWorker.execute(Status, iD, id);
+                        Toast.makeText(ShuttleActivity.this, "result:"+ string.length()+" "+string, Toast.LENGTH_SHORT).show();
 
 
                         queueNo.setText(String.valueOf(queueNum) );

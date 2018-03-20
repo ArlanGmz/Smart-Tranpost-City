@@ -36,6 +36,7 @@ public class DriverShuttleResv extends AppCompatActivity {
         final String arrive = getIntent().getStringExtra("Arrive");
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
+        final String schedID = getIntent().getStringExtra("SchedID");
 
 
         for(int i = 1; i<4; i++)

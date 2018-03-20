@@ -30,11 +30,12 @@ public class DriverActivity extends AppCompatActivity {
         Stops.add("Nuvali");
         Stops.add("Laguna Central");
 
+        ID.add("101");
+
         listView = findViewById(R.id.sched);
 
         Stopss.add("Laguna Central");
-        Arrive.add("6:15");
-        Depart.add("6:30");
+        Depart.add("9:20");
 
 
         final CustomListView customListView= new CustomListView(this,Stopss,Depart, ID);
@@ -44,10 +45,10 @@ public class DriverActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 Intent intent = new Intent(DriverActivity.this, DriverShuttleResv.class);
-                //intent.putExtra("Arrive", Arrive.get(0) );
                 intent.putExtra("Depart", Depart.get(0) );
                 intent.putExtra("Destination", Stopss.get(0) );
                 intent.putExtra("CurLocation", Stops.get(0));
+                intent.putExtra("SchedID", ID.get(0));
                 startActivity(intent);
 
 
