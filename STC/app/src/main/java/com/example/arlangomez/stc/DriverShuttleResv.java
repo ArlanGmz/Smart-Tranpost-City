@@ -54,24 +54,39 @@ public class DriverShuttleResv extends AppCompatActivity {
 
 
 
+
+
         final String location = getIntent().getStringExtra("CurLocation");
         final String arrive = getIntent().getStringExtra("Arrive");
         final String depart = getIntent().getStringExtra("Depart");
         final String destination = getIntent().getStringExtra("Destination");
         final String schedID = getIntent().getStringExtra("SchedID");
 
+        final String Status = "list";
+        String splt = GetList(Status, schedID);
 
+        String[] split = splt.split("\\s+");
 
+        for(int i = 0; i<split.length; i++) {
+            num.add(String.valueOf(i+1));
+            id.add(split[i]);
+        }
+/*
+        id.add("11502363");
+        id.add("11502346");
+        id.add("11402395");*/
 
-
-
+        final passengerlist Passenger= new passengerlist( this, num, id);
+        listView.setAdapter(Passenger);
 
         trip = findViewById(R.id.LocationName);
         trip.setText(location + " -> "+ destination);
         time = findViewById(R.id.time);
         time.setText(arrive);
 
-
+        if (listView.getCount()==0){
+            empty.setText("No one is currently reserved for this trip");
+        }
 
         backButton = findViewById(R.id.backbton);
         backButton.setOnClickListener(new View.OnClickListener() {
@@ -85,8 +100,12 @@ public class DriverShuttleResv extends AppCompatActivity {
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Status = "list";
-                listWorker = new ListWorker(new ListWorker.AsyncResponse() {
+
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+
+                /*listWorker = new ListWorker(new ListWorker.AsyncResponse() {
                     @Override
                     public void processFinish(String output) {
                         string = output;
@@ -98,16 +117,12 @@ public class DriverShuttleResv extends AppCompatActivity {
 
                 for(int i = 0; i < split.length; i++) {
                     Toast.makeText(DriverShuttleResv.this, "result:" + split[i], Toast.LENGTH_SHORT).show();
-                    num.add(String.valueOf(i+1));
-                    id.add(split[i]);
                 }
 
-                final passengerlist Passenger= new passengerlist(this, num, id);
-                listView.setAdapter(Passenger);
 
                 if (listView.getCount()==0){
                     empty.setText("No one is currently reserved for this trip");
-                }
+                }*/
 
 
             }
@@ -154,5 +169,5 @@ public class DriverShuttleResv extends AppCompatActivity {
         }
 
         return result;
-    };
+    }
 }

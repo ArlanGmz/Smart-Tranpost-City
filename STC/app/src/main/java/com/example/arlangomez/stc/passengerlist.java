@@ -24,7 +24,7 @@ public class passengerlist extends ArrayAdapter<String> {
 
     private Activity context;
 
-    public passengerlist(View.OnClickListener context, ArrayList<String> num, ArrayList<String> id){
+    public passengerlist(Activity context, ArrayList<String> num, ArrayList<String> id){
         super(context, R.layout.passenger_parts, num);
 
         this.context=context;
