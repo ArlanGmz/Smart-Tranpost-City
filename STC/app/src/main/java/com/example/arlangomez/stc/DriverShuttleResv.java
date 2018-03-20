@@ -22,7 +22,7 @@ public class DriverShuttleResv extends AppCompatActivity {
     ArrayList<String > id = new ArrayList<>();
     ArrayList<String > num = new ArrayList<>();
     ImageView backButton, refresh;
-    public String string = "hi";
+    public String string = "hi hello how";
     ListWorker listWorker = new ListWorker(new ListWorker.AsyncResponse() {
         @Override
         public void processFinish(String output) {
@@ -49,19 +49,7 @@ public class DriverShuttleResv extends AppCompatActivity {
         final String destination = getIntent().getStringExtra("Destination");
         final String schedID = getIntent().getStringExtra("SchedID");
 
-        String Status = "list";
-        listWorker = new ListWorker(new ListWorker.AsyncResponse() {
-            @Override
-            public void processFinish(String output) {
-                string = "hell";
-            }
-        });
-        listWorker.execute(Status, schedID);
-        Toast.makeText(DriverShuttleResv.this, "result:"+ schedID+"::"+string+"::", Toast.LENGTH_SHORT).show();
-        String[] split = string.split("\\s+");
 
-        for(int i = 0; i < split.length; i++)
-            Toast.makeText(DriverShuttleResv.this, "result:"+ split[i], Toast.LENGTH_SHORT).show();
 
 
         for(int i = 1; i<4; i++)
@@ -95,9 +83,19 @@ public class DriverShuttleResv extends AppCompatActivity {
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
+                String Status = "list";
+                listWorker = new ListWorker(new ListWorker.AsyncResponse() {
+                    @Override
+                    public void processFinish(String output) {
+                        string = output;
+                    }
+                });
+                listWorker.execute(Status, schedID);
+                Toast.makeText(DriverShuttleResv.this, "result:"+ schedID+"::"+string+"::", Toast.LENGTH_SHORT).show();
+                String[] split = string.split("\\s+");
+
+                for(int i = 0; i < split.length; i++)
+                    Toast.makeText(DriverShuttleResv.this, "result:"+ split[i], Toast.LENGTH_SHORT).show();
             }
         });
 

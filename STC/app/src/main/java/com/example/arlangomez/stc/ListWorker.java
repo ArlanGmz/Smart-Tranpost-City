@@ -1,7 +1,5 @@
 package com.example.arlangomez.stc;
 
-import android.app.AlertDialog;
-import android.content.Context;
 import android.os.AsyncTask;
 
 import java.io.BufferedReader;
@@ -59,7 +57,7 @@ public class ListWorker extends AsyncTask<String, Void, String>{
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String line;
                 while((line=bufferedReader.readLine())!=null){
-                    result += line;
+                    result = line;
                 }
                 bufferedReader.close();
                 inputStream.close();
