@@ -103,6 +103,8 @@ public class ShuttleActivity extends AppCompatActivity {
                 showWorker.execute(Status, id);
                 Toast.makeText(ShuttleActivity.this, "result:"+id+" count:"+qcount+"::", Toast.LENGTH_SHORT).show();
                 // qcount = number of reserved.
+                
+                queueNo.setText(queueNum+qcount);
 
 
 
