@@ -21,13 +21,13 @@ import android.widget.Toast;
  */
 
 public class ShuttleActivity extends AppCompatActivity {
-    private TextView curloc, eta, etd, dest, queueNo,waitNo, status;
+    private TextView curloc, etd, dest, queueNo,waitNo, status;
     private static final String TAG = "MainActivity";
     private RelativeLayout mainsh;
     private ImageView backButton, refresh;
     private String iD ;
 
-    public String qcount = "1";
+    public String qcount = "0";
     public int qcoun ;
 
     public String string = "";
@@ -111,7 +111,8 @@ public class ShuttleActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    queueNo.setText(qcoun+queueNum);
+                    int qno= qcoun+queueNum;
+                    queueNo.setText(""+qno);
                 }
 
 

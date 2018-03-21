@@ -65,7 +65,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour != 9) {
@@ -75,7 +75,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 }
@@ -95,7 +95,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour != 11) {
@@ -105,7 +105,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 }
@@ -125,7 +125,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid+=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour == 12) {
@@ -135,7 +135,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour != 13) {
@@ -145,7 +145,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 }
@@ -164,7 +164,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour != 15) {
@@ -174,7 +174,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 }
@@ -193,7 +193,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 } else if (hour != 20) {
@@ -203,7 +203,7 @@ public class StopActivity extends AppCompatActivity {
                         Lcenid += 1;
                         ID.add(String.valueOf(Lcenid));
                     } else if (location.matches("Nuvali")) {
-                        nuvid = +1;
+                        nuvid +=1;
                         ID.add(String.valueOf(nuvid));
                     }
                 }
