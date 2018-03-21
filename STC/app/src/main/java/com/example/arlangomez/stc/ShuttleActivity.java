@@ -1,5 +1,6 @@
 package com.example.arlangomez.stc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +24,7 @@ public class ShuttleActivity extends AppCompatActivity {
     private TextView curloc, eta, etd, dest, queueNo,waitNo, status;
     private static final String TAG = "MainActivity";
     private RelativeLayout mainsh;
-    private ImageView backButton;
+    private ImageView backButton, refresh;
     private String iD ;
 
     public String string = "";
@@ -75,6 +76,20 @@ public class ShuttleActivity extends AppCompatActivity {
         waitlist = Integer.parseInt((String) waitNo.getText());
 
         rel= findViewById(R.id.shuttlelayout);
+
+        refresh = findViewById(R.id.refresh);
+        refresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+
+
+
+            }
+        });
 
 
 
