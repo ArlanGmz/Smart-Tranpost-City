@@ -27,6 +27,8 @@ public class ShuttleActivity extends AppCompatActivity {
     private ImageView backButton, refresh;
     private String iD ;
 
+    public String qcount = "";
+
     public String string = "";
     QueueWorker queueWorker = new QueueWorker(new QueueWorker.AsyncResponse() {
         @Override
@@ -35,6 +37,15 @@ public class ShuttleActivity extends AppCompatActivity {
         }
 
     });
+
+    ShowWorker showWorker = new ShowWorker(new ShowWorker.AsyncResponse() {
+        @Override
+        public void processFinish(String output) {
+            string = output;
+        }
+
+    });
+
 
     private RelativeLayout rel;
 
@@ -81,10 +92,17 @@ public class ShuttleActivity extends AppCompatActivity {
         refresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String Status = "show";
 
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
+                showWorker = new ShowWorker(new ShowWorker.AsyncResponse() {
+                    @Override
+                    public void processFinish(String output) {
+                        qcount = output;
+                    }
+                });
+                showWorker.execute(Status, id);
+                Toast.makeText(ShuttleActivity.this, "result:"+id+" count:"+qcount+"::", Toast.LENGTH_SHORT).show();
+                // qcount = number of reserved.
 
 
 
