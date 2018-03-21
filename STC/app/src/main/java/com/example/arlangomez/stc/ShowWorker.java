@@ -57,7 +57,7 @@ public class ShowWorker extends AsyncTask<String, Void, String>{
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream, "iso-8859-1"));
                 String line;
                 while((line=bufferedReader.readLine())!=null){
-                    result = line;
+                    result += line;
                 }
                 bufferedReader.close();
                 inputStream.close();

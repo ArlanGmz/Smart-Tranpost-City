@@ -27,7 +27,7 @@ public class ShuttleActivity extends AppCompatActivity {
     private ImageView backButton, refresh;
     private String iD ;
 
-    public String qcount = "";
+    public String qcount = "1";
     public int qcoun ;
 
     public String string = "";
