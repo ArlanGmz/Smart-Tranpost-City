@@ -28,6 +28,7 @@ public class ShuttleActivity extends AppCompatActivity {
     private String iD ;
 
     public String qcount = "";
+    public int qcoun ;
 
     public String string = "";
     QueueWorker queueWorker = new QueueWorker(new QueueWorker.AsyncResponse() {
@@ -103,8 +104,15 @@ public class ShuttleActivity extends AppCompatActivity {
                 showWorker.execute(Status, id);
                 Toast.makeText(ShuttleActivity.this, "result:"+id+" count:"+qcount+"::", Toast.LENGTH_SHORT).show();
                 // qcount = number of reserved.
-                
-                queueNo.setText(queueNum+qcount);
+                qcoun=Integer.parseInt(qcount);
+                if(status.getText()=="")
+                {
+                    queueNo.setText(qcoun);
+                }
+                else
+                {
+                    queueNo.setText(qcoun+queueNum);
+                }
 
 
 
