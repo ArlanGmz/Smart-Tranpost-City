@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 /**
  * Created by ArlanGomez on 26/02/2018.
  */
@@ -20,6 +22,11 @@ public class AccFragment extends Fragment {
     TextView textView, emp;
     ListView lstview;
     private String UserID;
+    ArrayList<String> Stops = new ArrayList<>();
+    ArrayList<String> Stopss = new ArrayList<>();
+    ArrayList<String> Arrive = new ArrayList<>();
+    ArrayList<String> Depart = new ArrayList<>();
+    ArrayList<String> ID = new ArrayList<>();
 
     @Nullable
     @Override
@@ -32,6 +39,8 @@ public class AccFragment extends Fragment {
         textView = view.findViewById(R.id.merit);
         emp =view.findViewById(R.id.empty);
         lstview = view.findViewById(R.id.Schedlist);
+
+
 
         if(lstview.getCount()==0){
             emp.setText("You are currently not reserved for any trips");

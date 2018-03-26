@@ -12,12 +12,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\45ff81d1a97643e75e47035dbfb998c7\\res\\drawable-xxhdpi-v4\\ic_plusone_standard_off_client.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_cast_white_36.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxhdpi-v4\\quantum_ic_cast_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_tab.xml.flat",
@@ -112,24 +112,24 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-mdpi-v4\\quantum_ic_forward_30_white_36.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_volume_up_white_36.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-mdpi-v4\\quantum_ic_volume_up_white_36.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_ic_group_collapse_04.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxxhdpi-v4\\ic_group_collapse_04.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_quantum_ic_volume_up_white_36.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-mdpi-v4\\quantum_ic_volume_up_white_36.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\bd3789de59a22b6f45541a2815fb0e8e\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_clear.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\drawable-xhdpi-v4\\places_ic_clear.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_places_ic_clear.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\drawable-xhdpi-v4\\places_ic_clear.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_forward_30_white_36.png.flat",
@@ -200,24 +200,24 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_16_light.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_powered_by_google.xml.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_19_light.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xhdpi-v4\\ic_mr_button_connected_19_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_place_autocomplete_item_powered_by_google.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\layout\\place_autocomplete_item_powered_by_google.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar_include.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4aca27d5ff964db42db1f20573d9a7cb\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_play_arrow_grey600_48.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\4aca27d5ff964db42db1f20573d9a7cb\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_play_arrow_grey600_48.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_play_arrow_grey600_48.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
@@ -260,12 +260,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_cast_white_36.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_cast_white_36.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
@@ -288,12 +288,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-mdpi-v4\\ic_dialog_close_light.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\bd3789de59a22b6f45541a2815fb0e8e\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -328,12 +328,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_closed_caption_white_36.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_closed_caption_white_36.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_pause_grey600_36.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxhdpi-v4\\quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_closed_caption_white_36.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_closed_caption_white_36.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -372,12 +372,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxhdpi-v4\\quantum_ic_keyboard_arrow_down_white_36.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_powered_by_google_dark.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-places-11.8.0.aar\\5995b4f679ad545eb9e6381a148cd5c0\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_cast_ic_notification_1.png.flat",
@@ -396,16 +396,16 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\ec761e17b84a99048bb623ce2983255e\\res\\drawable\\common_google_signin_btn_icon_dark_focused.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_stop_white_24.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-hdpi-v4\\quantum_ic_stop_white_24.png"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\layout\\abc_action_menu_item_layout.xml"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_stop_white_24.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-hdpi-v4\\quantum_ic_stop_white_24.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\color_common_google_signin_btn_text_dark.xml.flat",
@@ -444,20 +444,20 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xhdpi-v4\\ic_vol_type_tv_dark.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_plusone_small_off_client.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\45ff81d1a97643e75e47035dbfb998c7\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_plusone_small_off_client.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-plus-11.8.0.aar\\45ff81d1a97643e75e47035dbfb998c7\\res\\drawable-xxhdpi-v4\\ic_plusone_small_off_client.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_vol_type_tv_dark.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-mdpi-v4\\ic_vol_type_tv_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -516,12 +516,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable\\mr_media_play_dark.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\color\\abc_secondary_text_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_16_light.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_16_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\color\\abc_secondary_text_material_light.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_01_light.png.flat",
@@ -536,12 +536,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_13_light.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_ic_vol_type_speaker_light.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-mdpi-v4\\ic_vol_type_speaker_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connected_11_dark.png.flat",
@@ -600,16 +600,16 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-mdpi-v4\\quantum_ic_replay_30_white_36.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\cast_abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_hide_password.xml.flat",
@@ -620,12 +620,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_media_play_dark.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_media_play_dark.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\bd3789de59a22b6f45541a2815fb0e8e\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_media_play_dark.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_media_play_dark.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_06_dark.png.flat",
@@ -656,36 +656,36 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_play_arrow_grey600_36.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_controller_material_dialog_b.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\layout\\mr_controller_material_dialog_b.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_quantum_ic_play_arrow_grey600_36.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxhdpi-v4\\quantum_ic_play_arrow_grey600_36.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_07_light.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_07_light.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_quantum_ic_stop_grey600_48.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-hdpi-v4\\quantum_ic_stop_grey600_48.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_replay_30_white_24.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_30_white_24.png"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_ic_mr_button_connecting_07_light.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xhdpi-v4\\ic_mr_button_connecting_07_light.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_05_dark.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_dark.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_cast_ic_notification_2.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-11.8.0.aar\\6d2b5ca27bdef5b6829baac70e39237d\\res\\drawable-mdpi-v4\\cast_ic_notification_2.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_mr_button_connecting_05_dark.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\mediarouter-v7-25.2.0.aar\\17ef71de176483facd7c35a86b7d974b\\res\\drawable-xxhdpi-v4\\ic_mr_button_connecting_05_dark.png"
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_replay_30_white_24.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_replay_30_white_24.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_chooser_list_item.xml.flat",
@@ -752,12 +752,12 @@
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-mdpi-v4\\quantum_ic_skip_previous_white_36.png"
     },
     {
-        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
-        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\ec761e17b84a99048bb623ce2983255e\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
-    },
-    {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_googleg_standard_color_18.png.flat",
+        "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.8.0.aar\\ec761e17b84a99048bb623ce2983255e\\res\\drawable-hdpi-v4\\googleg_standard_color_18.png"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_ic_media_pause_light.png.flat",
@@ -1882,6 +1882,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_goingto.png.flat",
         "source": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\src\\main\\res\\drawable-mdpi\\ic_goingto.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_reserved_list.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\src\\main\\res\\layout\\reserved_list.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -3266,6 +3270,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\6d338faa1c368afa20fcdc766d247527\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_driverpasslist.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\src\\main\\res\\layout\\activity_driverpasslist.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
@@ -4746,6 +4754,10 @@
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_quantum_ic_pause_grey600_36.png.flat",
         "source": "C:\\Users\\ArlanGomez\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-cast-framework-11.8.0.aar\\8f5e15270b613ce6d07a3eeb6c07b558\\res\\drawable-xxxhdpi-v4\\quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_waitlisted_list.xml.flat",
+        "source": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\src\\main\\res\\layout\\waitlisted_list.xml"
     },
     {
         "merged": "C:\\Users\\ArlanGomez\\Documents\\GitHub\\Smart-Transport-City\\STC\\app\\build\\intermediates\\res\\merged\\debug\\layout_mr_playback_control.xml.flat",

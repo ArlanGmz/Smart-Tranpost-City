@@ -23,7 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#333"
-            android:textSize="22dp"/>
+            android:layout_below="@+id/etd"
+            android:layout_marginTop="5dp"
+            android:textSize="17dp"/>
 
         <TextView
             android:id="@+id/Dest"
@@ -32,7 +34,7 @@
             android:layout_toRightOf="@id/going"
             android:layout_below="@id/etd"
             android:textColor="#333"
-            android:textSize="22dp"/>
+            android:textSize="17dp"/>
         <ImageView
             android:id="@+id/going"
             android:layout_width="50dp"
@@ -42,8 +44,10 @@
             android:layout_below="@id/etd"
             android:layout_toRightOf="@id/from"
             android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_goingto"/>
+            android:src="@drawable/ic_goingto"
+            />
 
 
         <TextView

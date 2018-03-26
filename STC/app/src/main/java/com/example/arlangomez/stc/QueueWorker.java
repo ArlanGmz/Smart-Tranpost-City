@@ -35,7 +35,7 @@ public class QueueWorker extends AsyncTask<String, Void, String>{
     @Override
     protected String doInBackground(String... strings) {
         String status = strings[0];
-        String locate_url = "http://172.16.2.52/locate.php";
+        String locate_url = "http://172.16.4.199/locate.php";
         result = "";
         if(status.equals("queue")){
             try {

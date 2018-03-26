@@ -27,8 +27,6 @@ public class DriverActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver);
         Stops.add("DLSU-Laguna");
-        Stops.add("Nuvali");
-        Stops.add("Laguna Central");
 
         ID.add("101");
 
@@ -38,7 +36,7 @@ public class DriverActivity extends AppCompatActivity {
         Depart.add("9:20");
 
 
-        final CustomListView customListView= new CustomListView(this,Stopss,Depart, ID);
+        final CustomListView customListView= new CustomListView(this,Stopss,Stops,Depart, ID);
         listView.setAdapter(customListView);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
